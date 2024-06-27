@@ -1,0 +1,105 @@
+body{
+    font-size: 12px;
+    background-color: #EAC926;
+}
+
+/* Header*/
+header{
+    background-color: #EAC926;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#LogoPagina{
+    width: 50%;
+
+}
+main{
+    background-color: #ebebeb;
+    padding: 15px;
+}
+
+main label{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+
+.formRegister label{
+    text-align: left;
+    margin-right: 15px;
+}
+
+.formRegister .FecNac{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formRegister .perUser input{
+    margin-left: 25px;
+}
+
+.formRegister .perUser{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+    font-family: arial;
+}
+
+.formRegister .interUser{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: arial;
+}
+
+.formRegister .interUser div label{
+    font-size: 15px;
+    /* font-family: arial; */
+    font-weight: normal;
+}
+
+
+main div form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.formRegister .interUser input{
+    margin-left: 35px ;
+}
+
+.formRegister .buttons{
+   display: flex;
+   gap: 1.5rem;
+
+}
+
+.formRegister .buttons div.send:hover input{
+    background-color: blue;
+    color: white;
+    
+}
+
+.formRegister .buttons div.reset:hover input{
+    background-color: blue;
+    color: white;
+    
+}

@@ -1,0 +1,51 @@
+*{
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+}
+
+
+.top-header{
+    margin-bottom: 25px;
+}
+
+.botonAcceder input:hover{
+    background-color: #0022AA;
+    transition: 0.1s;
+}
+
+
+
+.botonRestablecer input:hover{
+    background-color: #a400aa;
+    transition: 0.1s;
+}
+
+#Copyright{
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+
+footer p{
+    font-size: 15px;
+    
+}
+
+footer .options:hover i{
+    color: #EAC926;
+}
+
+
+@media(min-width:768px){
+
+    footer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: -8px;
+
+    }
+
+}

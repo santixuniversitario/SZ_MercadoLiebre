@@ -1,0 +1,365 @@
+
+
+body{
+    width: 100%;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+/* Header*/
+header{
+    margin: -5px ;
+    padding: -5px;
+    background-color: #EAC926;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.listaDesordenadaHeader{
+
+display: flex;
+list-style-type: none;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.searchText{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+#LogoPagina {
+    width: 30%;
+    padding-bottom: 10px;
+    
+}
+
+.burger-menu button{
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-left: 50%;
+}
+
+.burger-menu {
+   margin: auto;
+
+}
+
+section.banner img{
+    margin: -5px;
+    width: 100%;
+}
+
+/* Main - articles*/
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+main section div.products article{
+    background-color: #ebebeb;
+}
+
+main img{
+    width: 50%;
+    height: 50%;
+   
+}
+
+.product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+main section article i{
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    color: #39b54a;
+    background-color: #ebebeb;
+    border: 2px solid #39b54a;
+    border-radius: 50%;
+    padding-top: 5px;
+    margin-right: 15px;
+}
+
+div .truck{
+    display: flex;
+    justify-content: end;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 15px;
+}
+
+.precios{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.priceProduct{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 15px;
+}
+
+main section article img {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+}
+
+.main-article{
+    margin-bottom: 25px;
+}
+
+div.products article{
+  border: 0.3px solid gray;
+   
+}
+
+div.products article:hover{
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+ 
+  }
+
+
+
+.Section__Title{
+    font-size: 24px;
+    margin:1px;
+    font-family: 'Roboto';
+}
+
+
+.price{
+    margin-left: 5px;
+    height: 30%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.discount{
+    width: 45%;
+    color: #39b54a;
+    font-size: 15px;
+}
+
+main h4{
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5;
+    font-family: 'Roboto';
+    visibility: hidden;
+    margin-top: 35px;
+   
+} 
+
+div.products article:hover  h4{
+    pointer-events: none;
+    transition: .6s;
+    visibility: visible;
+     
+  }
+
+  div.products article:hover i{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .6s;
+
+  }
+/*
+  main section article i:hover{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .6s;
+  }
+/*Footer*/
+
+footer{
+    background-color: #ebebeb;
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+footer i{
+    margin-top: 50px;
+    color: #1259c3;
+    text-align: center;
+    font-size: 50px;
+   
+}
+
+footer h3{
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+footer .options:hover i{
+    color: #EAC926;
+}
+
+#Copyright{
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+#Copyright{
+    margin-top: 100px;
+}
+
+@media (min-width: 320px){ /*Mobile*/
+  
+    .navbar{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logoBuscador{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+        margin: -5px;
+    }
+
+    main section div.products article{
+        width: 100%;
+        margin: auto;
+       
+    }
+
+    main section article img{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 481px){ /*tablet*/
+  
+    .subtexto{
+        font-size: 15px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        gap: 5rem;
+        width: 100%;
+        justify-content: baseline;
+    }
+
+    .listaDesordenadaHeader{
+        flex-direction: row;
+        gap: 0.5rem;
+        width: 100%;
+        position: relative;
+        left: 30px;
+       
+        
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+        
+    }
+
+
+}
+
+@media(min-width:768px){ /*laptop*/
+
+    .burger-menu{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+    
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    main section div.products article{
+        width: 25%;
+        margin: -10px;
+        height: 100%;
+    }
+
+    @media(min-width:768px){
+
+        footer{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: -8px;
+    
+        }
+    
+    }
+
+}

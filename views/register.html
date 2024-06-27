@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/CSS/styleReg.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ca01c0950a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img id="LogoPagina" src="/images/logo-mercado-liebre.svg">
+    </header>
+    <main>
+        <div class="formRegister">
+        <form action="register" method="post">
+            <input type="text" name="name" placeholder="Nombre y apellido">
+            
+            <input type="text" name="user" placeholder="Usuario">
+            
+            <input type="email" name="email" placeholder="E-mail">
+            <div class="FecNac">
+            <label for="date">Fecha de Nac:</label>
+            <input type="date" name="date">
+            </div>
+            
+          
+            <input type="text" name="dom" placeholder="Domicilio">
+        
+            <label for="perUser">Perfil de usuario:</label>
+             <div class="perUser">     
+                <input type="radio" name="perUser" value="Comprador" checked>Comprador
+                <input type="radio" name="perUser" value="Vendedor">Vendedor
+            </div>   
+            <label for="interUser"> Intereses:</label>
+            <div class="interUser">
+                <div>
+                    <input type="checkbox" name="interests" value="a" id="a">
+                    <label for="a">Electro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="b" id="b">
+                    <label for="b">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="c" id="c">
+                    <label for="c">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="d" id="d">
+                    <label for="d">Juguetería</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="e" id="e">
+                    <label for="e">Vida sana</label>
+                </div>
+            </div>
+       
+            <label for="photoPerfil">Foto de perfil: </label>
+            <input type="file" for="photoPerfil">
+
+            <input type="password" name="contra" placeholder="Contraseña">
+            
+            <input type="password" name="Contraseña" placeholder="Confirmar Contraseña">
+           <div class="buttons">
+                <div class="send">
+                    <input type="submit" name="Enviar">
+                </div>
+                <div class="reset">
+                    <input type="reset" name="Borrar">
+                </div>
+            </div>
+        </form>
+        </div>
+
+    </main>
+    
+</body>
+</html>
