@@ -33,10 +33,7 @@ main label{
 }
 
 
-.formRegister label{
-    text-align: left;
-    margin-right: 15px;
-}
+
 
 .formRegister .FecNac{
     margin-bottom: 35px;
@@ -79,7 +76,12 @@ main div form {
     flex-direction: column;
     padding: 15px;
     gap: 15px;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formRegister .interUser label{
+    margin-left: 35px ;
 }
 
 .formRegister .interUser input{
