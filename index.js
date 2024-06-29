@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+let port = 3000 || process.env.PORT;
 
 app.use(express.static('./public'));
 
-app.listen(3000, ()=>{
-    console.log('Servidor corriendo en el http://localhost:3000');
+app.listen(port, ()=>{
+    console.log(`Servidor corriendo en el http://localhost${port}`);
 });
 
 app.get('/',(req,res)=>{
