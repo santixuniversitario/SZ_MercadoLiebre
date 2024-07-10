@@ -25,6 +25,7 @@ header{
 
 header .subtexto{
     text-align: center;
+    width: 70%;
 }
 
 .navbar{
@@ -59,7 +60,7 @@ header .subtexto{
 }
 
 #LogoPagina {
-    width: 50%;
+    width: 30%;
 }
 
 .busqueda{
@@ -249,13 +250,18 @@ footer{
     margin-top: 100px;
     margin: auto;
     text-align: center;
+    
+}
+
+footer .options{
+    margin-bottom: 10px;
 }
 
 footer i{
     margin-top: 50px;
     color: #1259c3;
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
    
 }
 
@@ -273,9 +279,7 @@ footer .options:hover i{
     background-color: #ebebeb;
 }
 
-#Copyright{
-    margin-top: 100px;
-}
+
 
 @media (min-width: 320px){ /*Mobile*/
     
@@ -337,6 +341,11 @@ footer .options:hover i{
         font-size: 15px;
     }
 
+    header .subtexto{
+        text-align: center;
+        width: 70%;
+    }
+
     .burger-menu{
         display: none;
     }
@@ -379,6 +388,10 @@ footer .options:hover i{
 
 @media(min-width:768px){ /*laptop*/
 
+    header .subtexto{
+        text-align: center;
+        width: 70%;
+    }
     .navbar {
         display: flex;
         gap: 5rem;

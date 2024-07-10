@@ -7,7 +7,7 @@ let port = 3000 || process.env.PORT;
 app.use(express.static('./public'));
 
 app.listen(port, ()=>{
-    console.log(`Servidor corriendo en el http://localhost${port}`);
+    console.log(`Servidor corriendo en el http://localhost:${port}`);
 });
 
 app.get('/',(req,res)=>{
